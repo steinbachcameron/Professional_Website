@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Advisory Service</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007BFF, #004494);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        header button {
+            background-color: #FFC107;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #E0A800;
+        }
+
+        .hero-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 800px;
+            z-index: -1;
+            filter: brightness(0.8);
+        }
+
+        .hero-kittens {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 200px;
+            z-index: 1;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .services {
+            background-color: #ffffff;
+            padding: 80px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .service {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+
+        .service p {
+            font-size: 16px;
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            background-color: #007BFF;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Empowering Small Businesses to Thrive</h1>
+            <p>Expert Advice and Strategic Solutions for Your Growth</p>
+            <button onclick="scheduleConsultation()">Schedule a Consultation</button>
+        </div>
+        <img class="hero-image" src="https://via.placeholder.com/800x400" alt="Hero Image">
+        <img class="hero-kittens" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FU5YSf_6OsCcAAAAM%2Fsteamboat-willie-cursed.gif&f=1&nofb=1&ipt=7ce16a3103e0de08bea23e147a297ac39fc4eb0c49be1b689793f739c788e76b" alt="Kittens">
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <div class="service-icon">$</div>
+                    <h3>Financial Management</h3>
+                    <p>Comprehensive financial planning and management services to improve your
+financial health and boost profitability.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">📈</div>
+                    <h3>Marketing Strategy</h3>
+                    <p>Tailored marketing strategies to enhance brand visibility, drive sales,
+and expand your market reach.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">👨‍💼</div>
+                    <h3>HR Management</h3>
+                    <p>Efficient HR solutions to manage your workforce, improve employee
+satisfaction, and reduce turnover.</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Operational Efficiency</h3>
+                    <p>Streamline operations to improve productivity, reduce costs, and enhance
+overall business performance.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Business Advisory Service. All rights reserved.</p>
+            <div>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scheduleConsultation() {
+            alert('Thank you for your interest! We will contact you shortly.');
+        }
+    </script>
+</body>
+</html>
